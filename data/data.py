@@ -10,7 +10,7 @@ table = soup.find("table")
 
 table_data = {}
 for row in table.find_all("tr"):
-    first_cell = row.find("td")
+    first_cell = row.find("th")
     if first_cell:
         cell_text = first_cell.get_text().replace(" B.V.", "").strip().lower()
         print(cell_text)
@@ -22,5 +22,8 @@ for row in table.find_all("tr"):
 
 print(table_data)
 
-with open("data/data.json", "w") as f:
-    json.dump( table_data, f)
+try:
+    with open("data.json", "w") as f:
+        json.dump( table_data, f)
+except:
+    print("cannot write to file data.json")
