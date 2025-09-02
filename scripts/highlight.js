@@ -20,7 +20,7 @@
   banner.innerHTML = `
       <b>Highlighter Info</b> <br> 
       <span>Welcome to use this highlighter plugin 😁 Here are some info you may want to know: <br><br>If the company registers different names in the <a style="color: #0bf0ff;" target="_blank" href="https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants">government list</a> and LinkedIn, it won’t be highlighted. The highlighted companies are very likely to provide VISAs, but others may also have some chances, especially large companies. <br>
-      The source code is <a style="color: #0bf0ff;" target="_blank" href="https://github.com/wentungwen/dutch_sponsorship_companies_highlighter">here</a>. You may want to know the methodology.<br><br>
+      The source code is <a style="color: #0bf0ff;" target="_blank" href="https://github.com/sc0Vu/dutch_sponsorship_companies_highlighter">here</a>. You may want to know the methodology.<br><br>
       Check carefully, and wish you good luck in job hunting 🥰🥰🥰</span>
   `;
 
