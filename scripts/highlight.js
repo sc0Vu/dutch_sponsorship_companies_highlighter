@@ -60,7 +60,7 @@
 function selectClassName() {
   const hostname = window.location.hostname.toLowerCase();
   if (hostname.includes("linkedin")) {
-    return ".artdeco-entity-lockup__subtitle.ember-view span";
+    return ".artdeco-entity-lockup__subtitle.ember-view span, .linked-area .t-black";
   } else if (hostname.includes("indeed")) {
     return '[data-testid="company-name"]';
   } else {
