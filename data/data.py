@@ -24,7 +24,7 @@ print(table_data)
 
 try:
     with open("data.js", "w") as f:
-        data = json.dumps( table_data )
+        data = json.dumps(table_data, ensure_ascii=False)
         f.write("const data = " + data)
 except Exception as e:
     print("cannot write to file data.json")
