@@ -23,7 +23,9 @@ for row in table.find_all("tr"):
 print(table_data)
 
 try:
-    with open("data.json", "w") as f:
-        json.dump( table_data, f)
-except:
+    with open("data.js", "w") as f:
+        data = json.dumps( table_data )
+        f.write("const data = " + data)
+except Exception as e:
     print("cannot write to file data.json")
+    print(e)
